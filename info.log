@@ -1,0 +1,1714 @@
+2023-09-04 14:11:19,174 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2023-09-04 14:14:26,692 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 14:14:26,696 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 14:14:30,526 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 14:14:30,643 - kedro.io.data_catalog - INFO - Loading data from 'train_dt' (PickleDataSet)...
+2023-09-04 14:14:32,085 - kedro.io.data_catalog - INFO - Loading data from 'val_dt' (PickleDataSet)...
+2023-09-04 14:14:32,087 - kedro.io.data_catalog - INFO - Loading data from 'test_dt' (PickleDataSet)...
+2023-09-04 14:14:33,444 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 14:14:34,108 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 14:14:34,766 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 14:14:36,343 - kedro.pipeline.node - INFO - Running node: z: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]
+2023-09-04 14:16:53,076 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 14:16:53,079 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 14:16:56,867 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 14:16:56,984 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 14:16:57,658 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 14:16:58,314 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 14:16:58,322 - kedro.pipeline.node - INFO - Running node: zeb: loading([train_comments_processed,test_comments_processed,params:parameters]) -> [train_dt,val_dt,test_dt]
+2023-09-04 14:17:18,015 - kedro.io.data_catalog - INFO - Saving data to 'train_dt' (PickleDataSet)...
+2023-09-04 14:17:19,041 - kedro.io.data_catalog - INFO - Saving data to 'val_dt' (PickleDataSet)...
+2023-09-04 14:17:19,716 - kedro.io.data_catalog - INFO - Saving data to 'test_dt' (PickleDataSet)...
+2023-09-04 14:17:20,703 - kedro.runner.sequential_runner - INFO - Completed 1 out of 1 tasks
+2023-09-04 14:17:20,704 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2023-09-04 14:20:15,753 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 14:20:15,757 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 14:20:19,578 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 14:20:19,695 - kedro.io.data_catalog - INFO - Loading data from 'train_dt' (PickleDataSet)...
+2023-09-04 14:20:21,141 - kedro.io.data_catalog - INFO - Loading data from 'val_dt' (PickleDataSet)...
+2023-09-04 14:20:21,143 - kedro.io.data_catalog - INFO - Loading data from 'test_dt' (PickleDataSet)...
+2023-09-04 14:20:22,493 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 14:20:23,153 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 14:20:23,805 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 14:20:25,340 - kedro.pipeline.node - INFO - Running node: z: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]
+2023-09-04 14:21:16,969 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 14:21:16,972 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 14:21:20,807 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 14:21:20,922 - kedro.io.data_catalog - INFO - Loading data from 'train_dt' (PickleDataSet)...
+2023-09-04 14:21:22,384 - kedro.io.data_catalog - INFO - Loading data from 'val_dt' (PickleDataSet)...
+2023-09-04 14:21:22,385 - kedro.io.data_catalog - INFO - Loading data from 'test_dt' (PickleDataSet)...
+2023-09-04 14:21:23,738 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 14:21:24,401 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 14:21:25,060 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 14:21:26,644 - kedro.pipeline.node - INFO - Running node: z: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]
+2023-09-04 14:22:41,334 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 14:22:41,337 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 14:22:45,155 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 14:22:45,272 - kedro.io.data_catalog - INFO - Loading data from 'train_dt' (PickleDataSet)...
+2023-09-04 14:22:46,715 - kedro.io.data_catalog - INFO - Loading data from 'val_dt' (PickleDataSet)...
+2023-09-04 14:22:46,717 - kedro.io.data_catalog - INFO - Loading data from 'test_dt' (PickleDataSet)...
+2023-09-04 14:22:48,087 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 14:22:48,752 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 14:22:49,413 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 14:22:50,968 - kedro.pipeline.node - INFO - Running node: z: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]
+2023-09-04 14:22:57,259 - kedro.pipeline.node - ERROR - Node 'z: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]' failed with error: 
+'list' object has no attribute 'shape'
+2023-09-04 14:22:58,882 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2023-09-04 14:23:33,877 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 14:23:33,881 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 14:23:37,720 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 14:23:37,840 - kedro.io.data_catalog - INFO - Loading data from 'train_dt' (PickleDataSet)...
+2023-09-04 14:23:39,296 - kedro.io.data_catalog - INFO - Loading data from 'val_dt' (PickleDataSet)...
+2023-09-04 14:23:39,298 - kedro.io.data_catalog - INFO - Loading data from 'test_dt' (PickleDataSet)...
+2023-09-04 14:23:40,659 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 14:23:41,323 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 14:23:41,983 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 14:23:43,544 - kedro.pipeline.node - INFO - Running node: z: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]
+2023-09-04 14:23:49,741 - kedro.pipeline.node - ERROR - Node 'z: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]' failed with error: 
+'list' object has no attribute 'shape'
+2023-09-04 14:23:51,335 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2023-09-04 14:24:09,439 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 14:24:09,443 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 14:24:13,299 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 14:24:13,416 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 14:24:14,093 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 14:24:14,755 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 14:24:14,763 - kedro.pipeline.node - INFO - Running node: zeb: loading([train_comments_processed,test_comments_processed,params:parameters]) -> [train_dt,val_dt,test_dt]
+2023-09-04 14:24:32,134 - kedro.io.data_catalog - INFO - Saving data to 'train_dt' (PickleDataSet)...
+2023-09-04 14:24:32,259 - kedro.io.data_catalog - INFO - Saving data to 'val_dt' (PickleDataSet)...
+2023-09-04 14:24:32,262 - kedro.io.data_catalog - INFO - Saving data to 'test_dt' (PickleDataSet)...
+2023-09-04 14:24:32,428 - kedro.runner.sequential_runner - INFO - Completed 1 out of 1 tasks
+2023-09-04 14:24:32,429 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2023-09-04 14:24:36,623 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 14:24:36,627 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 14:24:40,458 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 14:24:40,576 - kedro.io.data_catalog - INFO - Loading data from 'train_dt' (PickleDataSet)...
+2023-09-04 14:24:40,624 - kedro.io.data_catalog - INFO - Loading data from 'val_dt' (PickleDataSet)...
+2023-09-04 14:24:40,626 - kedro.io.data_catalog - INFO - Loading data from 'test_dt' (PickleDataSet)...
+2023-09-04 14:24:40,672 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 14:24:41,365 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 14:24:42,029 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 14:24:42,037 - kedro.pipeline.node - INFO - Running node: z: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]
+2023-09-04 14:24:51,913 - kedro.pipeline.node - ERROR - Node 'z: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]' failed with error: 
+Graph execution error:
+
+Fail to find the dnn implementation.
+	 [[{{node CudnnRNN}}]]
+	 [[model/bidirectional/forward_lstm/PartitionedCall]] [Op:__inference_train_function_6306]
+2023-09-04 14:24:51,925 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2023-09-04 14:26:49,785 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 14:26:49,788 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 14:27:03,941 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 14:27:03,945 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 14:27:07,779 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 14:27:07,896 - kedro.io.data_catalog - INFO - Loading data from 'train_dt' (PickleDataSet)...
+2023-09-04 14:27:07,942 - kedro.io.data_catalog - INFO - Loading data from 'val_dt' (PickleDataSet)...
+2023-09-04 14:27:07,944 - kedro.io.data_catalog - INFO - Loading data from 'test_dt' (PickleDataSet)...
+2023-09-04 14:27:07,988 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 14:27:08,666 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 14:27:09,333 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 14:27:09,341 - kedro.pipeline.node - INFO - Running node: z: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]
+2023-09-04 14:27:18,991 - kedro.pipeline.node - ERROR - Node 'z: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]' failed with error: 
+Graph execution error:
+
+Fail to find the dnn implementation.
+	 [[{{node CudnnRNN}}]]
+	 [[model/bidirectional/forward_lstm/PartitionedCall]] [Op:__inference_train_function_6306]
+2023-09-04 14:27:19,005 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2023-09-04 14:29:12,467 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 14:29:12,471 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 14:29:16,483 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 14:29:16,600 - kedro.io.data_catalog - INFO - Loading data from 'train_dt' (PickleDataSet)...
+2023-09-04 14:29:16,646 - kedro.io.data_catalog - INFO - Loading data from 'val_dt' (PickleDataSet)...
+2023-09-04 14:29:16,647 - kedro.io.data_catalog - INFO - Loading data from 'test_dt' (PickleDataSet)...
+2023-09-04 14:29:16,691 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 14:29:17,366 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 14:29:18,034 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 14:29:18,042 - kedro.pipeline.node - INFO - Running node: z: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]
+2023-09-04 14:29:22,232 - kedro.pipeline.node - ERROR - Node 'z: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]' failed with error: 
+Physical devices cannot be modified after being initialized
+2023-09-04 14:29:22,244 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2023-09-04 14:29:44,681 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 14:29:44,685 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 14:29:48,542 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 14:29:48,658 - kedro.io.data_catalog - INFO - Loading data from 'train_dt' (PickleDataSet)...
+2023-09-04 14:29:48,702 - kedro.io.data_catalog - INFO - Loading data from 'val_dt' (PickleDataSet)...
+2023-09-04 14:29:48,704 - kedro.io.data_catalog - INFO - Loading data from 'test_dt' (PickleDataSet)...
+2023-09-04 14:29:48,748 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 14:29:49,419 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 14:29:50,083 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 14:29:50,091 - kedro.pipeline.node - INFO - Running node: z: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]
+2023-09-04 14:29:50,117 - kedro.pipeline.node - ERROR - Node 'z: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]' failed with error: 
+Memory growth cannot differ between GPU devices
+2023-09-04 14:29:50,125 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2023-09-04 14:30:02,121 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 14:30:02,124 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 14:30:06,278 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 14:30:06,396 - kedro.io.data_catalog - INFO - Loading data from 'train_dt' (PickleDataSet)...
+2023-09-04 14:30:06,441 - kedro.io.data_catalog - INFO - Loading data from 'val_dt' (PickleDataSet)...
+2023-09-04 14:30:06,443 - kedro.io.data_catalog - INFO - Loading data from 'test_dt' (PickleDataSet)...
+2023-09-04 14:30:06,487 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 14:30:07,165 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 14:30:07,833 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 14:30:07,842 - kedro.pipeline.node - INFO - Running node: z: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]
+2023-09-04 14:30:07,870 - kedro.pipeline.node - ERROR - Node 'z: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]' failed with error: 
+Memory growth cannot differ between GPU devices
+2023-09-04 14:30:07,879 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2023-09-04 14:30:21,080 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 14:30:21,084 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 14:30:24,927 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 14:30:25,049 - kedro.io.data_catalog - INFO - Loading data from 'train_dt' (PickleDataSet)...
+2023-09-04 14:30:25,095 - kedro.io.data_catalog - INFO - Loading data from 'val_dt' (PickleDataSet)...
+2023-09-04 14:30:25,097 - kedro.io.data_catalog - INFO - Loading data from 'test_dt' (PickleDataSet)...
+2023-09-04 14:30:25,142 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 14:30:25,834 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 14:30:26,497 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 14:30:26,505 - kedro.pipeline.node - INFO - Running node: z: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]
+2023-09-04 14:30:35,704 - kedro.pipeline.node - ERROR - Node 'z: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]' failed with error: 
+Graph execution error:
+
+Fail to find the dnn implementation.
+	 [[{{node CudnnRNN}}]]
+	 [[model/bidirectional/forward_lstm/PartitionedCall]] [Op:__inference_train_function_6306]
+2023-09-04 14:30:35,717 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2023-09-04 14:31:27,116 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 14:31:27,120 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 14:31:30,992 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 14:31:31,107 - kedro.io.data_catalog - INFO - Loading data from 'train_dt' (PickleDataSet)...
+2023-09-04 14:31:31,152 - kedro.io.data_catalog - INFO - Loading data from 'val_dt' (PickleDataSet)...
+2023-09-04 14:31:31,154 - kedro.io.data_catalog - INFO - Loading data from 'test_dt' (PickleDataSet)...
+2023-09-04 14:31:31,197 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 14:31:31,870 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 14:31:32,536 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 14:31:32,545 - kedro.pipeline.node - INFO - Running node: z: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]
+2023-09-04 14:31:32,546 - kedro.pipeline.node - ERROR - Node 'z: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]' failed with error: 
+No module named 'keras.backend.tensorflow_backend'
+2023-09-04 14:31:32,554 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2023-09-04 14:31:53,661 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 14:31:53,665 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 14:31:57,559 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 14:31:57,676 - kedro.io.data_catalog - INFO - Loading data from 'train_dt' (PickleDataSet)...
+2023-09-04 14:31:57,720 - kedro.io.data_catalog - INFO - Loading data from 'val_dt' (PickleDataSet)...
+2023-09-04 14:31:57,722 - kedro.io.data_catalog - INFO - Loading data from 'test_dt' (PickleDataSet)...
+2023-09-04 14:31:57,765 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 14:31:58,434 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 14:31:59,091 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 14:31:59,100 - kedro.pipeline.node - INFO - Running node: z: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]
+2023-09-04 14:31:59,101 - kedro.pipeline.node - ERROR - Node 'z: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]' failed with error: 
+module 'tensorflow' has no attribute 'ConfigProto'
+2023-09-04 14:31:59,109 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2023-09-04 14:36:10,922 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 14:36:10,925 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 14:36:14,744 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 14:36:14,860 - kedro.io.data_catalog - INFO - Loading data from 'train_dt' (PickleDataSet)...
+2023-09-04 14:36:14,905 - kedro.io.data_catalog - INFO - Loading data from 'val_dt' (PickleDataSet)...
+2023-09-04 14:36:14,907 - kedro.io.data_catalog - INFO - Loading data from 'test_dt' (PickleDataSet)...
+2023-09-04 14:36:14,951 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 14:36:15,635 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 14:36:16,312 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 14:36:16,320 - kedro.pipeline.node - INFO - Running node: z: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]
+2023-09-04 14:37:16,141 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 14:37:16,145 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 14:37:19,932 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 14:37:20,050 - kedro.io.data_catalog - INFO - Loading data from 'train_dt' (PickleDataSet)...
+2023-09-04 14:37:20,095 - kedro.io.data_catalog - INFO - Loading data from 'val_dt' (PickleDataSet)...
+2023-09-04 14:37:20,097 - kedro.io.data_catalog - INFO - Loading data from 'test_dt' (PickleDataSet)...
+2023-09-04 14:37:20,140 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 14:37:20,811 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 14:37:21,472 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 14:37:21,480 - kedro.pipeline.node - INFO - Running node: z: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]
+2023-09-04 14:41:04,912 - kedro.io.data_catalog - INFO - Saving data to 'submission_tfidf_logreg' (CSVDataSet)...
+2023-09-04 14:41:06,259 - kedro.runner.sequential_runner - INFO - Completed 1 out of 1 tasks
+2023-09-04 14:41:06,264 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2023-09-04 15:08:45,198 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 15:08:45,202 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 15:08:49,005 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 15:08:49,122 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 15:08:49,795 - kedro.io.data_catalog - INFO - Loading data from 'test_dt' (PickleDataSet)...
+2023-09-04 15:08:49,840 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 15:08:49,845 - kedro.pipeline.node - INFO - Running node: ze: eval([test_comments_processed,test_dt,params:parameters]) -> [submission]
+2023-09-04 15:08:54,524 - kedro.pipeline.node - ERROR - Node 'ze: eval([test_comments_processed,test_dt,params:parameters]) -> [submission]' failed with error: 
+name 'test_pad' is not defined
+2023-09-04 15:08:54,534 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2023-09-04 15:09:11,579 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 15:09:11,583 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 15:09:15,627 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 15:09:15,749 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 15:09:16,428 - kedro.io.data_catalog - INFO - Loading data from 'test_dt' (PickleDataSet)...
+2023-09-04 15:09:16,481 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 15:09:16,488 - kedro.pipeline.node - INFO - Running node: ze: eval([test_comments_processed,test_dt,params:parameters]) -> [submission]
+2023-09-04 15:09:23,828 - kedro.io.data_catalog - INFO - Saving data to 'submission' (CSVDataSet)...
+2023-09-04 15:09:24,771 - kedro.runner.sequential_runner - INFO - Completed 1 out of 1 tasks
+2023-09-04 15:09:24,773 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2023-09-04 16:54:04,714 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 16:54:04,718 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 16:54:08,579 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 16:54:08,696 - kedro.io.data_catalog - INFO - Loading data from 'train_comments' (CSVDataSet)...
+2023-09-04 16:54:09,492 - kedro.pipeline.node - INFO - Running node: zebi: preprocess_train([train_comments]) -> [train_comments_processed]
+2023-09-04 16:54:09,494 - granlp.pipelines.preprocessing.nodes - INFO - Preprocessing Training Data
+2023-09-04 16:54:24,922 - granlp.pipelines.preprocessing.nodes - INFO - HEAD OF Training data:
+2023-09-04 16:54:25,199 - granlp.pipelines.preprocessing.nodes - INFO - Our Labels: []
+2023-09-04 16:54:25,200 - granlp.pipelines.preprocessing.nodes - INFO - The shape of our labels: (159571,)
+2023-09-04 16:54:25,217 - kedro.io.data_catalog - INFO - Saving data to 'train_comments_processed' (CSVDataSet)...
+2023-09-04 16:54:26,508 - kedro.runner.sequential_runner - INFO - Completed 1 out of 2 tasks
+2023-09-04 16:54:26,509 - kedro.io.data_catalog - INFO - Loading data from 'test_comments' (CSVDataSet)...
+2023-09-04 16:54:27,169 - kedro.pipeline.node - INFO - Running node: zebi2: preprocess_test([test_comments]) -> [test_comments_processed]
+2023-09-04 16:54:27,170 - granlp.pipelines.preprocessing.nodes - INFO - Preprocessing test Data
+2023-09-04 16:54:39,019 - granlp.pipelines.preprocessing.nodes - INFO - HEAD OF TESTING DATA:
+2023-09-04 16:54:39,026 - granlp.pipelines.preprocessing.nodes - INFO - The shape of our labels: (153164,)
+2023-09-04 16:54:39,037 - kedro.io.data_catalog - INFO - Saving data to 'test_comments_processed' (CSVDataSet)...
+2023-09-04 16:54:40,171 - kedro.runner.sequential_runner - INFO - Completed 2 out of 2 tasks
+2023-09-04 16:54:40,172 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2023-09-04 16:54:49,816 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 16:54:49,820 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 16:54:53,646 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 16:54:53,763 - kedro.io.data_catalog - INFO - Loading data from 'train_comments' (CSVDataSet)...
+2023-09-04 16:54:54,555 - kedro.pipeline.node - INFO - Running node: zebi: preprocess_train([train_comments]) -> [train_comments_processed]
+2023-09-04 16:54:54,556 - granlp.pipelines.preprocessing.nodes - INFO - Preprocessing Training Data
+2023-09-04 16:55:10,223 - granlp.pipelines.preprocessing.nodes - INFO - HEAD OF Training data:
+2023-09-04 16:55:10,499 - granlp.pipelines.preprocessing.nodes - INFO -                                         comment_text              labels
+0  explanation why the edits made under my userna...  [0, 0, 0, 0, 0, 0]
+1  d'aww! he matches this background colour i'm s...  [0, 0, 0, 0, 0, 0]
+2  hey man, i'm really not trying to edit war. it...  [0, 0, 0, 0, 0, 0]
+3  " more i can't make any real suggestions on im...  [0, 0, 0, 0, 0, 0]
+4  you, sir, are my hero. any chance you remember...  [0, 0, 0, 0, 0, 0]
+5  " congratulations from me as well, use the too...  [0, 0, 0, 0, 0, 0]
+6       cocksucker before you piss around on my work  [1, 1, 1, 0, 1, 0]
+7  your vandalism to the matt shirvington article...  [0, 0, 0, 0, 0, 0]
+8  sorry if the word 'nonsense' was offensive to ...  [0, 0, 0, 0, 0, 0]
+9  alignment on this subject and which are contra...  [0, 0, 0, 0, 0, 0]
+2023-09-04 16:55:10,516 - granlp.pipelines.preprocessing.nodes - INFO - Our Labels: []
+2023-09-04 16:55:10,517 - granlp.pipelines.preprocessing.nodes - INFO - The shape of our labels: (159571,)
+2023-09-04 16:55:10,534 - kedro.io.data_catalog - INFO - Saving data to 'train_comments_processed' (CSVDataSet)...
+2023-09-04 16:55:11,843 - kedro.runner.sequential_runner - INFO - Completed 1 out of 2 tasks
+2023-09-04 16:55:11,845 - kedro.io.data_catalog - INFO - Loading data from 'test_comments' (CSVDataSet)...
+2023-09-04 16:55:12,549 - kedro.pipeline.node - INFO - Running node: zebi2: preprocess_test([test_comments]) -> [test_comments_processed]
+2023-09-04 16:55:12,551 - granlp.pipelines.preprocessing.nodes - INFO - Preprocessing test Data
+2023-09-04 16:55:24,629 - granlp.pipelines.preprocessing.nodes - INFO - HEAD OF TESTING DATA:
+2023-09-04 16:55:24,635 - granlp.pipelines.preprocessing.nodes - INFO - The shape of our labels: (153164,)
+2023-09-04 16:55:24,647 - kedro.io.data_catalog - INFO - Saving data to 'test_comments_processed' (CSVDataSet)...
+2023-09-04 16:55:25,773 - kedro.runner.sequential_runner - INFO - Completed 2 out of 2 tasks
+2023-09-04 16:55:25,775 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2023-09-04 17:07:42,220 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 17:07:42,223 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 17:07:46,028 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 17:07:46,146 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 17:07:46,815 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 17:07:47,475 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 17:07:47,483 - kedro.pipeline.node - INFO - Running node: Loading: loading([train_comments_processed,test_comments_processed,params:parameters]) -> [train_dt,val_dt,test_dt]
+2023-09-04 17:07:47,484 - kedro.pipeline.node - ERROR - Node 'Loading: loading([train_comments_processed,test_comments_processed,params:parameters]) -> [train_dt,val_dt,test_dt]' failed with error: 
+Failed to save outputs of node Loading: loading([train_comments_processed,test_comments_processed,params:parameters]) -> [train_dt,val_dt,test_dt].
+The node definition contains a list of outputs ['train_dt', 'val_dt', 'test_dt'], whereas the node function returned a 'NoneType'.
+2023-09-04 17:07:47,492 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2023-09-04 17:08:21,702 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 17:08:21,705 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 17:08:25,518 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 17:08:25,635 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 17:08:26,306 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 17:08:26,965 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 17:08:26,972 - kedro.pipeline.node - INFO - Running node: Loading: loading([train_comments_processed,test_comments_processed,params:parameters]) -> [train_dt,val_dt,test_dt]
+2023-09-04 17:08:26,974 - granlp.pipelines.loading.nodes - INFO - Model chosen : LSTM
+2023-09-04 17:08:34,073 - granlp.pipelines.loading.nodes - INFO - LOADING TRAINING SET
+2023-09-04 17:08:39,302 - granlp.pipelines.loading.nodes - INFO - LOADING TEST SET
+2023-09-04 17:08:44,338 - kedro.io.data_catalog - INFO - Saving data to 'train_dt' (PickleDataSet)...
+2023-09-04 17:08:44,470 - kedro.io.data_catalog - INFO - Saving data to 'val_dt' (PickleDataSet)...
+2023-09-04 17:08:44,472 - kedro.io.data_catalog - INFO - Saving data to 'test_dt' (PickleDataSet)...
+2023-09-04 17:08:44,645 - kedro.runner.sequential_runner - INFO - Completed 1 out of 1 tasks
+2023-09-04 17:08:44,646 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2023-09-04 17:09:13,201 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 17:09:13,205 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 17:09:17,018 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 17:09:17,136 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 17:09:17,804 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 17:09:18,464 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 17:09:18,472 - kedro.pipeline.node - INFO - Running node: Loading: loading([train_comments_processed,test_comments_processed,params:parameters]) -> [train_dt,val_dt,test_dt]
+2023-09-04 17:09:18,473 - granlp.pipelines.loading.nodes - INFO - Model chosen : Tfid+Logreg
+2023-09-04 17:09:18,474 - granlp.pipelines.loading.nodes - INFO - Vectorizing Training set
+2023-09-04 17:09:23,916 - granlp.pipelines.loading.nodes - INFO - Vectorizing Test set
+2023-09-04 17:09:28,426 - kedro.io.data_catalog - INFO - Saving data to 'train_dt' (PickleDataSet)...
+2023-09-04 17:09:28,490 - kedro.io.data_catalog - INFO - Saving data to 'val_dt' (PickleDataSet)...
+2023-09-04 17:09:28,505 - kedro.io.data_catalog - INFO - Saving data to 'test_dt' (PickleDataSet)...
+2023-09-04 17:09:28,641 - kedro.runner.sequential_runner - INFO - Completed 1 out of 1 tasks
+2023-09-04 17:09:28,642 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2023-09-04 17:10:10,342 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 17:10:10,346 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 17:10:14,176 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 17:10:14,293 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 17:10:14,962 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 17:10:15,620 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 17:10:15,628 - kedro.pipeline.node - INFO - Running node: Loading: loading([train_comments_processed,test_comments_processed,params:parameters]) -> [train_dt,val_dt,test_dt]
+2023-09-04 17:10:15,629 - granlp.pipelines.loading.nodes - INFO - Model chosen : DistilBert
+2023-09-04 17:10:15,669 - kedro.pipeline.node - ERROR - Node 'Loading: loading([train_comments_processed,test_comments_processed,params:parameters]) -> [train_dt,val_dt,test_dt]' failed with error: 
+name 'ast' is not defined
+2023-09-04 17:10:15,677 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2023-09-04 17:37:47,976 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 17:37:47,980 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 17:38:09,373 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 17:38:09,377 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 17:38:13,191 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 17:38:13,307 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 17:38:13,977 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 17:38:14,635 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 17:38:14,643 - kedro.pipeline.node - INFO - Running node: Loading: loading([train_comments_processed,test_comments_processed,params:parameters]) -> [train_dt,val_dt,test_dt]
+2023-09-04 17:38:14,644 - granlp.pipelines.loading.nodes - INFO - Model chosen : DistilBert
+2023-09-04 17:38:16,405 - granlp.pipelines.loading.nodes - INFO - LOADING TRAINING SET
+2023-09-04 17:38:16,407 - granlp.pipelines.loading.nodes - INFO - LOADING VALIDATION SET
+2023-09-04 17:38:16,408 - granlp.pipelines.loading.nodes - INFO - LOADING TEST SET
+2023-09-04 17:38:16,417 - kedro.io.data_catalog - INFO - Saving data to 'train_dt' (PickleDataSet)...
+2023-09-04 17:38:16,596 - kedro.io.data_catalog - INFO - Saving data to 'val_dt' (PickleDataSet)...
+2023-09-04 17:38:16,623 - kedro.io.data_catalog - INFO - Saving data to 'test_dt' (PickleDataSet)...
+2023-09-04 17:38:16,822 - kedro.runner.sequential_runner - INFO - Completed 1 out of 1 tasks
+2023-09-04 17:38:16,823 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2023-09-04 17:44:20,594 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 17:44:20,597 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 17:44:38,630 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 17:44:38,634 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 17:44:42,510 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 17:44:42,627 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 17:44:43,298 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 17:44:43,955 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 17:44:43,963 - kedro.pipeline.node - INFO - Running node: Loading: loading([train_comments_processed,test_comments_processed,params:parameters]) -> [train_dt,val_dt,test_dt]
+2023-09-04 17:44:43,964 - granlp.pipelines.loading.nodes - INFO - Model chosen : LSTM
+2023-09-04 17:44:50,974 - granlp.pipelines.loading.nodes - INFO - LOADING TRAINING SET
+2023-09-04 17:44:56,194 - granlp.pipelines.loading.nodes - INFO - LOADING TEST SET
+2023-09-04 17:45:01,204 - kedro.io.data_catalog - INFO - Saving data to 'train_dt' (PickleDataSet)...
+2023-09-04 17:45:01,336 - kedro.io.data_catalog - INFO - Saving data to 'val_dt' (PickleDataSet)...
+2023-09-04 17:45:01,340 - kedro.io.data_catalog - INFO - Saving data to 'test_dt' (PickleDataSet)...
+2023-09-04 17:45:01,506 - kedro.runner.sequential_runner - INFO - Completed 1 out of 1 tasks
+2023-09-04 17:45:01,508 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2023-09-04 17:45:07,216 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 17:45:07,220 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 17:45:11,059 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 17:45:11,176 - kedro.io.data_catalog - INFO - Loading data from 'train_dt' (PickleDataSet)...
+2023-09-04 17:45:11,224 - kedro.io.data_catalog - INFO - Loading data from 'val_dt' (PickleDataSet)...
+2023-09-04 17:45:11,225 - kedro.io.data_catalog - INFO - Loading data from 'test_dt' (PickleDataSet)...
+2023-09-04 17:45:11,271 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 17:45:11,940 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 17:45:12,597 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 17:45:12,606 - kedro.pipeline.node - INFO - Running node: Training: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]
+2023-09-04 17:45:16,799 - granlp.pipelines.models.nodes - INFO - model summary:
+2023-09-04 17:45:16,802 - granlp.pipelines.models.nodes - INFO - None
+2023-09-04 17:45:18,614 - granlp.pipelines.models.nodes - INFO - Started Training LSTM
+2023-09-04 17:48:56,946 - kedro.io.data_catalog - INFO - Saving data to 'submission_tfidf_logreg' (CSVDataSet)...
+2023-09-04 17:48:58,269 - kedro.runner.sequential_runner - INFO - Completed 1 out of 1 tasks
+2023-09-04 17:48:58,274 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2023-09-04 17:51:33,879 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 17:51:33,883 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 17:51:37,715 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 17:51:37,832 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 17:51:38,508 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 17:51:39,169 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 17:51:39,177 - kedro.pipeline.node - INFO - Running node: Loading: loading([train_comments_processed,test_comments_processed,params:parameters]) -> [train_dt,val_dt,test_dt]
+2023-09-04 17:51:39,179 - granlp.pipelines.loading.nodes - INFO - Model chosen : Tfid+Logreg
+2023-09-04 17:51:39,180 - granlp.pipelines.loading.nodes - INFO - Vectorizing Training set
+2023-09-04 17:51:44,625 - granlp.pipelines.loading.nodes - INFO - Vectorizing Test set
+2023-09-04 17:51:49,156 - kedro.io.data_catalog - INFO - Saving data to 'train_dt' (PickleDataSet)...
+2023-09-04 17:51:49,219 - kedro.io.data_catalog - INFO - Saving data to 'val_dt' (PickleDataSet)...
+2023-09-04 17:51:49,235 - kedro.io.data_catalog - INFO - Saving data to 'test_dt' (PickleDataSet)...
+2023-09-04 17:51:49,372 - kedro.runner.sequential_runner - INFO - Completed 1 out of 1 tasks
+2023-09-04 17:51:49,373 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2023-09-04 17:53:39,431 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 17:53:39,435 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 17:53:43,289 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 17:53:43,405 - kedro.io.data_catalog - INFO - Loading data from 'train_dt' (PickleDataSet)...
+2023-09-04 17:53:43,496 - kedro.io.data_catalog - INFO - Loading data from 'val_dt' (PickleDataSet)...
+2023-09-04 17:53:43,497 - kedro.io.data_catalog - INFO - Loading data from 'test_dt' (PickleDataSet)...
+2023-09-04 17:53:43,570 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 17:53:44,244 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 17:53:44,906 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 17:53:44,914 - kedro.pipeline.node - INFO - Running node: Training: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]
+2023-09-04 17:53:46,718 - granlp.pipelines.models.nodes - INFO - ... Processing obscene
+2023-09-04 17:53:48,368 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/sklearn/linear_model/_logistic.py:460: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-09-04 17:53:48,389 - granlp.pipelines.models.nodes - INFO - Training accuracy is 0.963796679847842
+2023-09-04 17:53:48,720 - granlp.pipelines.models.nodes - INFO - Shape of X_dtm is now (159571, 5001)
+2023-09-04 17:53:48,721 - granlp.pipelines.models.nodes - INFO - The submission are available at : data/08_reporting/submission__tfidf_logreg.csv
+2023-09-04 17:53:48,722 - granlp.pipelines.models.nodes - INFO - ... Processing insult
+2023-09-04 17:53:50,339 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/sklearn/linear_model/_logistic.py:460: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-09-04 17:53:50,361 - granlp.pipelines.models.nodes - INFO - Training accuracy is 0.9926177062248153
+2023-09-04 17:53:50,571 - granlp.pipelines.models.nodes - INFO - Shape of X_dtm is now (159571, 5002)
+2023-09-04 17:53:50,573 - granlp.pipelines.models.nodes - INFO - The submission are available at : data/08_reporting/submission__tfidf_logreg.csv
+2023-09-04 17:53:50,574 - granlp.pipelines.models.nodes - INFO - ... Processing toxic
+2023-09-04 17:53:52,200 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/sklearn/linear_model/_logistic.py:460: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-09-04 17:53:52,220 - granlp.pipelines.models.nodes - INFO - Training accuracy is 0.985110076392327
+2023-09-04 17:53:52,363 - granlp.pipelines.models.nodes - INFO - Shape of X_dtm is now (159571, 5003)
+2023-09-04 17:53:52,364 - granlp.pipelines.models.nodes - INFO - The submission are available at : data/08_reporting/submission__tfidf_logreg.csv
+2023-09-04 17:53:52,365 - granlp.pipelines.models.nodes - INFO - ... Processing severe_toxic
+2023-09-04 17:53:53,936 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/sklearn/linear_model/_logistic.py:460: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-09-04 17:53:53,956 - granlp.pipelines.models.nodes - INFO - Training accuracy is 0.9984771669037608
+2023-09-04 17:53:54,096 - granlp.pipelines.models.nodes - INFO - Shape of X_dtm is now (159571, 5004)
+2023-09-04 17:53:54,097 - granlp.pipelines.models.nodes - INFO - The submission are available at : data/08_reporting/submission__tfidf_logreg.csv
+2023-09-04 17:53:54,098 - granlp.pipelines.models.nodes - INFO - ... Processing identity_hate
+2023-09-04 17:53:55,644 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/sklearn/linear_model/_logistic.py:460: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-09-04 17:53:55,663 - granlp.pipelines.models.nodes - INFO - Training accuracy is 0.9825845548376585
+2023-09-04 17:53:55,875 - granlp.pipelines.models.nodes - INFO - Shape of X_dtm is now (159571, 5005)
+2023-09-04 17:53:55,877 - granlp.pipelines.models.nodes - INFO - The submission are available at : data/08_reporting/submission__tfidf_logreg.csv
+2023-09-04 17:53:55,878 - granlp.pipelines.models.nodes - INFO - ... Processing threat
+2023-09-04 17:53:57,431 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/sklearn/linear_model/_logistic.py:460: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+
+2023-09-04 17:53:57,450 - granlp.pipelines.models.nodes - INFO - Training accuracy is 0.9955819039800465
+2023-09-04 17:53:57,585 - granlp.pipelines.models.nodes - INFO - Shape of X_dtm is now (159571, 5006)
+2023-09-04 17:53:57,587 - granlp.pipelines.models.nodes - INFO - The submission are available at : data/08_reporting/submission__tfidf_logreg.csv
+2023-09-04 17:53:57,618 - kedro.io.data_catalog - INFO - Saving data to 'submission_tfidf_logreg' (CSVDataSet)...
+2023-09-04 17:53:58,960 - kedro.runner.sequential_runner - INFO - Completed 1 out of 1 tasks
+2023-09-04 17:53:58,961 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2023-09-04 17:54:59,586 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 17:54:59,589 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 17:55:03,660 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 17:55:03,778 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 17:55:04,449 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 17:55:05,110 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 17:55:05,118 - kedro.pipeline.node - INFO - Running node: Loading: loading([train_comments_processed,test_comments_processed,params:parameters]) -> [train_dt,val_dt,test_dt]
+2023-09-04 17:55:05,119 - granlp.pipelines.loading.nodes - INFO - Model chosen : DistilBert
+2023-09-04 17:55:06,909 - granlp.pipelines.loading.nodes - INFO - LOADING TRAINING SET
+2023-09-04 17:55:06,915 - granlp.pipelines.loading.nodes - INFO - LOADING VALIDATION SET
+2023-09-04 17:55:06,916 - granlp.pipelines.loading.nodes - INFO - LOADING TEST SET
+2023-09-04 17:55:06,926 - kedro.io.data_catalog - INFO - Saving data to 'train_dt' (PickleDataSet)...
+2023-09-04 17:55:07,107 - kedro.io.data_catalog - INFO - Saving data to 'val_dt' (PickleDataSet)...
+2023-09-04 17:55:07,136 - kedro.io.data_catalog - INFO - Saving data to 'test_dt' (PickleDataSet)...
+2023-09-04 17:55:07,340 - kedro.runner.sequential_runner - INFO - Completed 1 out of 1 tasks
+2023-09-04 17:55:07,341 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2023-09-04 17:55:10,515 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 17:55:10,520 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 17:55:14,574 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 17:55:14,690 - kedro.io.data_catalog - INFO - Loading data from 'train_dt' (PickleDataSet)...
+2023-09-04 17:55:15,071 - kedro.io.data_catalog - INFO - Loading data from 'val_dt' (PickleDataSet)...
+2023-09-04 17:55:15,102 - kedro.io.data_catalog - INFO - Loading data from 'test_dt' (PickleDataSet)...
+2023-09-04 17:55:15,248 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 17:55:15,914 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 17:55:16,577 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 17:55:16,585 - kedro.pipeline.node - INFO - Running node: Training: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]
+2023-09-04 17:55:16,593 - kedro.io.data_catalog - INFO - Saving data to 'submission_tfidf_logreg' (CSVDataSet)...
+2023-09-04 17:55:16,594 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2023-09-04 17:57:57,167 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 17:57:57,171 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 17:58:00,995 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 17:58:01,111 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 17:58:01,781 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 17:58:02,440 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 17:58:02,448 - kedro.pipeline.node - INFO - Running node: Loading: loading([train_comments_processed,test_comments_processed,params:parameters]) -> [train_dt,val_dt,test_dt]
+2023-09-04 17:58:02,449 - granlp.pipelines.loading.nodes - INFO - Model chosen : DistilBert
+2023-09-04 17:58:04,225 - granlp.pipelines.loading.nodes - INFO - LOADING TRAINING SET
+2023-09-04 17:58:04,228 - granlp.pipelines.loading.nodes - INFO - LOADING VALIDATION SET
+2023-09-04 17:58:04,229 - granlp.pipelines.loading.nodes - INFO - LOADING TEST SET
+2023-09-04 17:58:04,237 - kedro.io.data_catalog - INFO - Saving data to 'train_dt' (PickleDataSet)...
+2023-09-04 17:58:04,421 - kedro.io.data_catalog - INFO - Saving data to 'val_dt' (PickleDataSet)...
+2023-09-04 17:58:04,452 - kedro.io.data_catalog - INFO - Saving data to 'test_dt' (PickleDataSet)...
+2023-09-04 17:58:04,659 - kedro.runner.sequential_runner - INFO - Completed 1 out of 1 tasks
+2023-09-04 17:58:04,661 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2023-09-04 17:58:09,501 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 17:58:09,504 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 17:58:13,316 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 17:58:13,435 - kedro.io.data_catalog - INFO - Loading data from 'train_dt' (PickleDataSet)...
+2023-09-04 17:58:13,805 - kedro.io.data_catalog - INFO - Loading data from 'val_dt' (PickleDataSet)...
+2023-09-04 17:58:13,835 - kedro.io.data_catalog - INFO - Loading data from 'test_dt' (PickleDataSet)...
+2023-09-04 17:58:13,981 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 17:58:14,646 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 17:58:15,308 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 17:58:15,316 - kedro.pipeline.node - INFO - Running node: Training: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]
+2023-09-04 17:58:15,324 - kedro.io.data_catalog - INFO - Saving data to 'submission_tfidf_logreg' (CSVDataSet)...
+2023-09-04 17:58:15,325 - kedro.runner.sequential_runner - WARNING - No nodes ran. Repeat the previous command to attempt a new run.
+2023-09-04 17:59:43,694 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 17:59:43,697 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 17:59:47,505 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 17:59:47,622 - kedro.io.data_catalog - INFO - Loading data from 'train_dt' (PickleDataSet)...
+2023-09-04 17:59:47,993 - kedro.io.data_catalog - INFO - Loading data from 'val_dt' (PickleDataSet)...
+2023-09-04 17:59:48,023 - kedro.io.data_catalog - INFO - Loading data from 'test_dt' (PickleDataSet)...
+2023-09-04 17:59:48,166 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 17:59:48,830 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 17:59:49,494 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 17:59:49,502 - kedro.pipeline.node - INFO - Running node: Training: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]
+2023-09-04 17:59:49,504 - granlp.pipelines.models.nodes - INFO - Started Training DistilBert
+2023-09-04 17:59:52,784 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 17:59:52,784 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 17:59:52,784 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 17:59:52,785 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 17:59:52,785 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 17:59:52,785 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 17:59:52,785 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 17:59:52,786 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 17:59:52,786 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 17:59:52,785 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 17:59:56,028 - granlp.pipelines.models.nodes - INFO - Epoch: 0, Loss:  0.7056163549423218
+2023-09-04 18:00:58,464 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 18:00:58,467 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 18:01:02,603 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 18:01:02,724 - kedro.io.data_catalog - INFO - Loading data from 'train_dt' (PickleDataSet)...
+2023-09-04 18:01:03,136 - kedro.io.data_catalog - INFO - Loading data from 'val_dt' (PickleDataSet)...
+2023-09-04 18:01:03,167 - kedro.io.data_catalog - INFO - Loading data from 'test_dt' (PickleDataSet)...
+2023-09-04 18:01:03,318 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 18:01:04,012 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 18:01:04,690 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 18:01:04,698 - kedro.pipeline.node - INFO - Running node: Training: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]
+2023-09-04 18:01:04,700 - granlp.pipelines.models.nodes - INFO - Started Training DistilBert
+2023-09-04 18:01:08,173 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:01:08,175 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:01:08,176 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:01:08,176 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:01:08,174 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:01:08,176 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:01:08,176 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:01:08,176 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:01:08,180 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:01:08,179 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:01:11,441 - granlp.pipelines.models.nodes - INFO - Epoch: 0, Loss:  0.7405922412872314
+2023-09-04 18:23:47,574 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:23:47,575 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:23:47,575 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:23:47,582 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:23:47,582 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:23:47,576 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:23:47,576 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:23:47,582 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:23:47,582 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:23:47,582 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:24:31,345 - granlp.pipelines.models.nodes - INFO - toxic precision 0.9566563467492261
+2023-09-04 18:24:31,354 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1469: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-09-04 18:24:31,356 - granlp.pipelines.models.nodes - INFO - severe_toxic precision 0.0
+2023-09-04 18:24:31,363 - granlp.pipelines.models.nodes - INFO - obscene precision 0.8920634920634921
+2023-09-04 18:24:31,370 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:1469: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+
+2023-09-04 18:24:31,371 - granlp.pipelines.models.nodes - INFO - threat precision 0.0
+2023-09-04 18:24:31,378 - granlp.pipelines.models.nodes - INFO - insult precision 0.8416289592760181
+2023-09-04 18:24:31,385 - granlp.pipelines.models.nodes - INFO - identity_hate precision 0.648936170212766
+2023-09-04 18:24:31,386 - granlp.pipelines.models.nodes - INFO - Evaluate loss 0.04294407743960619
+2023-09-04 18:24:32,178 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:24:32,180 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:24:32,181 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:24:32,180 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:24:32,180 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:24:32,181 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:24:32,181 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:24:32,181 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:24:32,181 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:24:32,181 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:24:32,418 - granlp.pipelines.models.nodes - INFO - Epoch: 1, Loss:  0.032640330493450165
+2023-09-04 18:29:43,077 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 18:29:43,081 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 18:30:00,147 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 18:30:00,151 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 18:30:04,120 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 18:30:04,241 - kedro.io.data_catalog - INFO - Loading data from 'train_dt' (PickleDataSet)...
+2023-09-04 18:30:04,630 - kedro.io.data_catalog - INFO - Loading data from 'val_dt' (PickleDataSet)...
+2023-09-04 18:30:04,661 - kedro.io.data_catalog - INFO - Loading data from 'test_dt' (PickleDataSet)...
+2023-09-04 18:30:04,815 - kedro.io.data_catalog - INFO - Loading data from 'train_comments_processed' (CSVDataSet)...
+2023-09-04 18:30:05,505 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 18:30:06,174 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 18:30:06,182 - kedro.pipeline.node - INFO - Running node: Training: train([train_dt,val_dt,test_dt,train_comments_processed,test_comments_processed,params:parameters]) -> [submission_tfidf_logreg]
+2023-09-04 18:30:06,184 - granlp.pipelines.models.nodes - INFO - Started Training DistilBert
+2023-09-04 18:30:09,663 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:30:09,663 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:30:09,667 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:30:09,668 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:30:09,668 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:30:09,668 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:30:09,672 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:30:09,672 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:30:09,671 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:30:09,672 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:30:19,011 - kedro.framework.session.session - INFO - Kedro project granlp
+2023-09-04 18:30:19,015 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/session/session.py:266: FutureWarning: ConfigLoader will be deprecated in Kedro 0.19. Please use the OmegaConfigLoader instead. To consult the documentation for OmegaConfigLoader, see here: https://docs.kedro.org/en/stable/configuration/advanced_configuration.html#omegaconfigloader
+  warnings.warn(
+
+2023-09-04 18:30:22,924 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py:359: UserWarning: An error occurred while importing the 'granlp.pipelines.build_graph' module. Nothing defined therein will be returned by 'find_pipelines'.
+
+Traceback (most recent call last):
+  File "/vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/kedro/framework/project/__init__.py", line 357, in find_pipelines
+    pipeline_module = importlib.import_module(pipeline_module_name)
+  File "/home/mohamed-amine.rguig/tools/python/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/__init__.py", line 6, in <module>
+    from .pipeline import create_pipeline
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/pipeline.py", line 7, in <module>
+    from .nodes import build_graph
+  File "/vol/home/mohamed-amine.rguig/granlp/src/granlp/pipelines/build_graph/nodes.py", line 23, in <module>
+    from .utils.Bert_processing import MultiLabelDataset
+ModuleNotFoundError: No module named 'granlp.pipelines.build_graph.utils'
+
+  warnings.warn(
+
+2023-09-04 18:30:23,051 - kedro.io.data_catalog - INFO - Loading data from 'test_comments_processed' (CSVDataSet)...
+2023-09-04 18:30:23,757 - kedro.io.data_catalog - INFO - Loading data from 'test_dt' (PickleDataSet)...
+2023-09-04 18:30:23,901 - kedro.io.data_catalog - INFO - Loading data from 'params:parameters' (MemoryDataset)...
+2023-09-04 18:30:23,906 - kedro.pipeline.node - INFO - Running node: ze: eval([test_comments_processed,test_dt,params:parameters]) -> [submission]
+2023-09-04 18:30:27,859 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:30:27,859 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:30:27,860 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:30:27,860 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:30:27,860 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:30:27,861 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:30:27,861 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:30:27,861 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:30:27,862 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+2023-09-04 18:30:27,865 - py.warnings - WARNING - /vol/home/mohamed-amine.rguig/env/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:2418: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
